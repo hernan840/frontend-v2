@@ -109,6 +109,9 @@ section{
     vertical-align: top;
 }
 .cambiar-text h3 .word{
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
     position: absolute;
     display: flex;
     opacity: 0;
@@ -126,10 +129,7 @@ section{
 .cambiar-text h3 .word .letter.behind{
     transform: rotateX(-90deg);
 }
-.portada.content .p{
-    color: #bdbdbd;
-    line-height: 1.6rem;
-}
+
 .info-box{
     display: inline-flex;
     justify-content:space-between;
