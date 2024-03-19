@@ -295,3 +295,123 @@ a.btn-download:hover:before{
     font-weight: 300;
     margin-bottom: 1.5rem;
 }
+
+/* ----------experiencias----- */
+.experiencia h1{
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: var(--normal-font);
+    text-align: center;
+
+}
+.container .text-box h2{
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.container .text-box small{
+    color: #5f666d;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.container .text-box p{
+    color: #fdfdfd;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.lineaTiempo-experiencia{
+   margin: 5em auto;
+   max-width: 34.15em; 
+}
+.container .text-box img{
+    position: absolute;
+    right: 5rem;
+    top: 3rem;
+    width: 4rem;
+    z-index: 10;
+}
+.container{
+    max-width: 34em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    position: relative;
+}
+.container .text-box{
+    border: 2px solid #888;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.container:nth-child(odd){
+    border-left: 3px solid #888;
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+.container:nth-child(even){
+    border-right: 3px solid #888;
+    padding-right: 3em;
+    transform: translateX(-16.82em);
+}
+/* ubicacion de linea que une el ciadro con la vertical */
+.container:nth-child(odd)::before,
+.container:nth-child(even)::before{
+    content: '';
+    background: #888;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.container:nth-child(odd)::before{
+    left: 0;
+}
+.container:nth-child(even)::before{
+    right: 0;
+}
+/* ubicacion del pumto */
+.container:nth-child(odd) div::before,
+.container:nth-child(even) div::before{
+    content: '';
+    background: #ffffff;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+.container:nth-child(odd) div::before{
+    left: -0.5em;
+}
+.container:nth-child(even) div::before{
+    right: -0.5em;
+}
+
+/* responsiv */
+@media screen and (max-width: 1150px) {
+    .lineaTiempo-experiencia{
+        width: 80vw;
+    }
+    .lineaTiempo-experiencia .container{
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .lineaTiempo-experiencia .container::before{
+        width: 3px;
+        height: 4em;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .lineaTiempo-experiencia .container div::before{
+        top:-0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
