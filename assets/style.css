@@ -14,7 +14,7 @@
     --bg-color:#250821;
     --secon-bg-color:#292e33;
     --big-font:2.5rem;
-    --noema-font:2rem;
+    --normal-font:2rem;
     --neon-box-shadow:0 0 .5rem #12f7ff;
     --h2-font:3rem;
     --font-neon-text-shadow:0 0 10px rgba(18, 247, 255, 0.3),
@@ -253,4 +253,45 @@ a.btn-download:hover:before{
     border-radius: 4rem 0;
     box-shadow: 0 0 0.8rem #12f7ff;
 }
-    
+
+/* -----------seccion sobre mi------------ */
+.sobreMi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+    background: var(--secon-bg-color);
+}    
+.sobreMi .img-sobreMi{
+    text-align: center;
+    position: relative;
+}
+.sobreMi .img-sobreMi img{
+    width: 25rem;
+    max-width: 350px;
+    height: auto;
+    border-radius: 4rem 0;
+    box-shadow: 0 0 0.8rem #12f7ff;
+}
+.sobreMi-content span{
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.sobreMi h2{
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
+.sobreMi h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+.sobreMi p{
+    color: #fdfdfd;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
