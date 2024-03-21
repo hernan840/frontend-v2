@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porfolio</title>
-    <link rel="stylesheet" href="/assets/style.css">
-
-
+    
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <script src="https://kit.fontawesome.com/708a30517a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/style.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
 
     <!--     seccion portada  -->
     <section id="portada" class="portada">
-        <div class="portada-content">
+        <div class="portada-content scroll-scale">
 
             <h1> Hola! Soy Hernan Flores</h1>
             <div class="cambiar-text">
@@ -45,10 +46,7 @@
                     <h5>Email : </h5>
                     <span>hernanflores21@gmail.com</span>
                 </div>
-                <div class="telefono-info">
-                    <h5> Cell : </h5>
-                    <span>088-156xxxxxx</span>
-                </div>
+               
             </div>
 
             <div class="btn-box">
@@ -64,7 +62,7 @@
         </div>
 
         <div class="yo-image">
-            <div class="img-box">
+            <div class="img-box scroll-scale">
                 <img src="/assets/imgs/perfil_portada.jpg" alt="">
 
             </div>
@@ -75,10 +73,10 @@
 
     <!-------------Sobre mi----------------->
     <section id="sobre_mi" class="sobreMi">
-        <div class="img-sobreMi">
+        <div class="img-sobreMi scroll-bottom">
             <img src="/assets/imgs/Yo.jpg" alt="">
         </div>
-        <div class="sobreMi-content">
+        <div class="sobreMi-content scroll-bottom">
             <span>Permítame presentarme</span>
             <h2>Sobre mi</h2>
             <h3>Te comento</h3>
@@ -90,9 +88,11 @@
     </section>
     <!-------------Experiencias----------------->
     <section id="experiencias" class="experiencia">
-        <h1>Experiencias</h1>
+        <div class="main-text scroll-scale">
+            <h1>Experiencias</h1>
+        </div>
 
-        <div class="lineaTiempo-experiencia">
+        <div class="lineaTiempo-experiencia scroll-bottom">
 
             <div class="container">
                 <div class="text-box">
@@ -148,8 +148,10 @@
 
     <!-------------Estudios----------------->
     <section id="educacion" class="estudios">
-        <h1>Estudios</h1>
-        <div class="container-estudio">
+        <div class="main-text scroll-scale">
+            <h1>Estudios</h1>
+        </div>
+        <div class="container-estudio scroll-bottom">
             <div class="card">
                 <div class="left-column">
                     <h2>2009 - 2055</h2>
@@ -248,11 +250,11 @@
 
     <!-------------habilidades/skill----------------->
     <section id="habilidades" class="habilidades">
-        <div class="main-text">
+        <div class="main-text scroll-scale">
             <h1>Mis Habilidades</h1>
         </div>
         <div class="skill-main">
-            <div class="skill-left">
+            <div class="skill-left scroll-scale">
                 <h3>Habilidades tecnicas</h3>
 
                 <div class="skill-bar">
@@ -297,7 +299,7 @@
 
             </div>
 
-            <div class="skill-rigth">
+            <div class="skill-rigth scroll-scale">
                 <h3>Habilidades Profesional</h3>
                 <div class="profesional">
                     <div class="box">
@@ -332,11 +334,11 @@
 
     <!-------------Proyectos----------------->
     <section id="proyectos" class="proyectos">
-        <div class="main-text">
+        <div class="main-text scroll-scale">
             <h1>Ultimos Proyectos</h1>
         </div>
 
-        <div class="container-proyectos">
+        <div class="container-proyectos scroll-scale">
             <div class="fillter-buttons">
                 <button class="btn" data-filter="all">Todos</button>
                 <button class="btn" data-filter=".web">Web</button>
@@ -345,7 +347,7 @@
             </div>
         </div>
 
-        <div class="portfolio-galery">
+        <div class="portfolio-galery scroll-bottom">
             <div class="port-box mix web">
                 <div class="port-img">
                     <img src="https://www.tucanit.com/wp-content/uploads/2021/10/2devins.jpg" alt="">
@@ -427,6 +429,9 @@
     </footer>
 
 
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/assets/mixitup.min.js"></script>
     <script src="/assets/script.js"></script>
 
