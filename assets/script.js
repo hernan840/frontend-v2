@@ -62,7 +62,7 @@ circles.forEach(elem=>{
 /* -------------selector de  proyectos*/
 var mixer = mixitup('.portfolio-galery');
 
-/* -------------activar  menu*/
+/* -------------activar  menu, resalta la seccion seleccionada */
 let menuLi = document.querySelectorAll('header ul li a');
 let section = document.querySelectorAll('section');
 
@@ -75,3 +75,23 @@ function activeMenu(){
 
 activeMenu();
 window.addEventListener("scroll",activeMenu);
+
+
+/* -------------sticky nabar*/
+const header = document.querySelector("header");
+window.addEventListener("scroll", function(){
+    header.classList.toggle("sticky",this.window.scrollY > 50)
+})
+/* -------------activar  togel o acordion menu*/
+let menuIcon = document.querySelector("#menu-icono");
+let navlist = document.querySelector(".navlist");
+
+menuIcon.onclick = ()=>{
+    menuIcon.classList.toggle("fa-xmark");
+    navlist.classList.toggle("open");
+}
+/* seleccionado algun elemento del  menu muestra y se oculra el menu desplegado*/
+    window.onscroll = ()=>{
+    menuIcon.classList.remove("fa-xmark");
+    navlist.classList.remove("open");
+}
