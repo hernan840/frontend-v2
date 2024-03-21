@@ -26,6 +26,18 @@
     0 0 100px rgba(18,247,255,0.3),
     0 0 150px rgba(18,247,255,0.3);
 }   
+ /* color barra lateral */
+::-webkit-scrollbar{
+    height: 0;
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--secon-bg-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--hover-color);
+    border-radius: 5rem;
+}
 
 body{
     font-family: "Poppins", sans-serif;
@@ -33,6 +45,13 @@ body{
     color: var(--text-color);
 }
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,6 +84,10 @@ span{
     0 0 80px rgba(18,247,255,0.6),
     0 0 100px rgba(18,247,255,0.6),
     0 0 150px rgba(18,247,255,0.6);
+}
+
+.navlist a.active{
+    color: var(--hover-color);
 }
 #menu_icono{
     font-size: 1.8rem;
@@ -766,4 +789,26 @@ a.btn-download:hover:before{
 .port-content a i{
     font-size: 1.3rem;
     color: var(--secon-bg-color) ;
+}
+
+/* ---------footer-------- */
+footer{
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;justify-content: space-between;
+}
+footer p{
+    color: #bdbdbd;
+} 
+footer a{
+    display: inline-flex;
+    justify-content: center;
+    color: var(--text-color);
+    /* background: var(--hover-color); */
+    padding: .6rem;
+    border-radius: 5px;
+}
+footer a i{
+    font-size: 2rem;
+    color: var(--neon-box-shadow);
 }
