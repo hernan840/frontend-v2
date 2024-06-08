@@ -473,11 +473,11 @@ a.btn-download:hover:before{
     font-weight: 700;
     font-size: var(--normal-font);
     text-align: center;
-    margin-bottom: 2rem;
+   
 
 }
 .estudios .main-text{
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 .estudios{
  
@@ -489,29 +489,6 @@ a.btn-download:hover:before{
     justify-content: space-between;
     flex-direction: column;
 } 
- /* Media query para dispositivos móviles */
-  @media (max-width: 768px) {
-    .container-estudio {
-      flex-direction: column;
-    }
-  
-    /* Ajustar el ancho de las cards para móviles */
-     .card {
-      width: 100%;
-    } 
-  }
-   
-  /* Media query para tablets */
-   @media (min-width: 768px) and (max-width: 1024px) {
-    /* Ajustar el ancho de las cards para tablets */
-    .card {
-      width: 50%;
-    }
-  } 
-
-
-
-
 
 /* cards flexible */
 .card {  
@@ -565,17 +542,17 @@ a.btn-download:hover:before{
     }
   }
     
-    @media screen and (max-width: 1099px) {
+    /* @media screen and (max-width: 1099px) {
       .club-cards-vertical {
         display: none;
       }
-    }
+    } */
     
-    @media screen and (min-width: 1099px) {
+ /*    @media screen and (min-width: 1099px) {
       .club-cards-horizontal {
         display: none;
       }
-  }
+  } */
 
 .estudios .btn-conteriner{
     width: 100%;
