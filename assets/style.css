@@ -381,11 +381,13 @@ a.btn-download:hover:before{
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
+  
 }
 .container .text-box{
     border: 2px solid #888;
     border-radius: 1em;
     padding: 1.5em;
+   
 }
 
 .container:nth-child(odd){
@@ -669,6 +671,7 @@ a.btn-download:hover:before{
     position: relative;
     margin: 10px 0;
     flex: 1 1 15rem;
+    text-align: center;
 }
 .box .text{
     text-align: center;
