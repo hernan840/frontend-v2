@@ -123,25 +123,25 @@ section{
 }
 
 
-.portada.content{
+.portada .portada-content{
     max-width: 600px;
 }
 
-h1{
+.portada .portada-content h1{
     font-size: var(--big-font);
     font-weight: 700;
 }
 
-.cambiar-text{
+.portada .portada-content .cambiar-text{
     font-size: 1.5rem;
     font-weight: 600;
 }
-.cambiar-text h3{
+.portada .portada-content .cambiar-text h3{
     display: inline-flex;
     margin: 0;
     vertical-align: top;
 }
-.cambiar-text h3 .word{
+.portada .portada-content .cambiar-text h3 .word{
     display: inline-flex;
     margin: 0;
     vertical-align: top;
@@ -151,21 +151,21 @@ h1{
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
-.cambiar-text h3 .word .letter{
+.portada .portada-content .cambiar-text h3 .word .letter{
     transform-origin: center center 25px;
 }
-.cambiar-text h3 .word .letter.out{
+.portada .portada-content .cambiar-text h3 .word .letter.out{
     transform: rotateX(90deg);
     transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
 }
-.cambiar-text h3 .word .letter.in{
+.portada .portada-content .cambiar-text h3 .word .letter.in{
     transition: 0.38s ease;
 }
-.cambiar-text h3 .word .letter.behind{
+.portada .portada-content .cambiar-text h3 .word .letter.behind{
     transform: rotateX(-90deg);
 }
 
-.info-box{
+.portada .portada-content .info-box{
     display: inline-flex;
     justify-content:space-between;
     align-items: center;
@@ -174,17 +174,17 @@ h1{
     margin-top: 6rem;
     
 }
-.info-box h5{
+.portada .portada-content .info-box h5{
     font-weight: 600;
     color: var(--text-color);
     font-size: 1rem;
 }
-.info-box span{
+.portada .portada-content .info-box span{
     font-size: .9rem;
     color: #bdbdbd;
 }
 
-.btn-box{
+.portada .portada-content .btn-box{
     display: flex;
     justify-content: space-between;
     width: 320px;
@@ -192,7 +192,7 @@ h1{
 
 }
 
-.btn-box a.btn-download{
+.portada .portada-content .btn-box a.btn-download{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -212,10 +212,10 @@ h1{
     border: 2px solid var(--hover-color);
     text-decoration: none;
 }
-a.btn-download:hover{
+.portada .portada-content .btn-box a.btn-download:hover{
     color: var(--hover-color);
 }
-a.btn-download::before{
+.portada .portada-content .btn-box a.btn-download::before{
     content: "";
     position: absolute;
     top: 0;
@@ -227,13 +227,13 @@ a.btn-download::before{
 
     transition: .4s;
 }
-a.btn-download:hover:before{
+.portada .portada-content .btn-box a.btn-download:hover:before{
     width: 100%;
  
 }
 
 
-.social-iconos{
+.portada .portada-content .social-iconos{
     margin-top: 8rem;
     display: flex;
     justify-content: space-between;
@@ -241,7 +241,7 @@ a.btn-download:hover:before{
     height: 34px;
     
 }
-.social-iconos a{
+.portada .portada-content .social-iconos a{
     padding-top: 2%;
     display: inline-flex;
     width: 50px;
@@ -258,14 +258,14 @@ a.btn-download:hover:before{
     overflow: hidden;
     text-decoration: none;
 }
-.social-iconos a i{
+.portada .portada-content .social-iconos a i{
     font-size: 1.5rem;
 
 }
-.social-iconos a:hover{
+.portada .portada-content .social-iconos a:hover{
     color: var(--bg-color);
 }
-.social-iconos a::before{
+.portada .portada-content .social-iconos a::before{
     content: "";
     position: absolute;
     left: 0;
@@ -276,7 +276,7 @@ a.btn-download:hover:before{
     transition: .6s;
     z-index: -1;
 }
-.social-iconos a:hover:before{
+.portada .portada-content .social-iconos a:hover:before{
     width: 100%;
 }
 
@@ -294,7 +294,7 @@ a.btn-download:hover:before{
     box-shadow: var(--neon-box-shadow);
 }
 
-.icon-content{
+.portada .icon-content{
     position: absolute;
     top: 1;
     right: 0;
@@ -318,72 +318,87 @@ a.btn-download:hover:before{
     border-radius: 4rem 0;
     box-shadow: 0 0 0.8rem #12f7ff;
 }
-.sobreMi-content span{
+.sobreMi .sobreMi-content span{
     color: #fdfdfd;
     font-size: .8rem;
     font-weight: 200;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.sobreMi h2{
+.sobreMi .sobreMi-content h2{
     color: var(--hover-color);
     font-weight: 700;
     font-size: var(--normal-font);
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
-.sobreMi h3{
+.sobreMi .sobreMi-content h3{
     font-weight: 600;
     font-size: 1.5rem;
     margin-bottom: .2rem;
 }
-.sobreMi p{
+.sobreMi .sobreMi-content p{
     color: #fdfdfd;
     font-weight: 300;
     margin-bottom: 1.5rem;
 }
 
+.sobreMi .icon-content{
+    position: absolute;
+    top: 1;
+    right: 0;
+}
 /* ----------experiencias----- */
-.experiencia h1{
+.experiencia .main-text h1{
     color: var(--hover-color);
     font-weight: 700;
     font-size: var(--normal-font);
     text-align: center;
 
 }
-.container .text-box h2{
+.experiencia .main-text .icon-content{
+    display: flex;
+    justify-content: right;
+    /* margin-right: 3rem; */
+    /* margin-top: 1.5rem; */
+
+}
+.experiencia .lineaTiempo-experiencia .container .text-box h2{
     color: var(--hover-color);
     font-weight: 700;
     font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
-.container .text-box small{
+.experiencia .lineaTiempo-experiencia .container .text-box small{
     color: #5f666d;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1rem;
 }
-.container .text-box p{
+.experiencia .lineaTiempo-experiencia .container .text-box p{
     color: #fdfdfd;
     font-weight: 300;
     margin-bottom: 1.5rem;
 }
 
-.lineaTiempo-experiencia{
-   margin: 5em auto;
+.experiencia .lineaTiempo-experiencia{
+   margin: 1em auto;
    max-width: 34.15em; 
 }
-.container .text-box img{
+.experiencia .lineaTiempo-experiencia .container .text-box img{
     position: absolute;
     right: 5rem;
     top: 3rem;
     width: 4rem;
     z-index: 10;
 }
-.container{
+.experiencia .lineaTiempo-experiencia .container{
     max-width: 34em;
     padding-top: 2em;
     padding-bottom: 2em;
     position: relative;
   
 }
-.container .text-box{
+.experiencia .lineaTiempo-experiencia .container .text-box{
     border: 2px solid #888;
     border-radius: 1em;
     padding: 1.5em;
@@ -462,30 +477,21 @@ a.btn-download:hover:before{
     }
 
 }
-.experiencia .icon-content{
-    display: flex;
-    justify-content: center;
-    margin-right: 3rem;
-    margin-top: 1.5rem;
 
-}
 /* -----------estudios------------ */
-.estudios h1{
+.estudios .main-text h1{
     color: var(--hover-color);
     font-weight: 700;
     font-size: var(--normal-font);
     text-align: center;
-   
-
 }
 .estudios .main-text{
     padding-bottom: 6rem;
 }
 .estudios{
- 
-    background: var(--secon-bg-color);
+     background: var(--secon-bg-color);
 } 
-.educacion .container-estudio{
+.estudios .container-estudio{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -493,70 +499,60 @@ a.btn-download:hover:before{
 } 
 
 /* cards flexible */
-.card {  
+.estudios .container-estudio .card {  
     display: flex;
     flex-wrap: wrap;
      border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(118, 134, 226, 0.884);
      margin:0 2rem;
+     background-color: #250821;
   }
   
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
-  .left-column {
+  .estudios .container-estudio .card .left-column {
     flex: 10%;
     background: linear-gradient(180deg,#21c8f6, #455eeb);
   
     padding: 20px;
      text-align: center;
   }
-  .left-column h2{
+  .estudios .container-estudio .card .left-column h2{
       letter-spacing: .1rem;
       margin:  2rem 0;
       font-size: 1.5rem;
-     
-      
+      color: var(--hover-color);
   } 
-  .left-column img{
+  .estudios .container-estudio .card .left-column img{
       width: 11rem;
   }
   /* Main column */
-  .right-column {
+  .estudios .container-estudio .card .right-column {
     flex: 70%;
     padding: 20px;
     margin: 0 2rem;
   }
-  .right-column h2{
+  .estudios .container-estudio .card .right-column h2{
     color: var(--hover-color);
     font-weight: 700;
     font-size: 1.5rem;
     padding-bottom: 1.5rem;
-    
-
-    
 }
+ .estudios .container-estudio .card .right-column p{
+    color: #21c8f6;
+} 
   
 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 1099px) {
-    .card {   
+    .estudios .container-estudio .card {   
       flex-direction: column;
     }
   }
     
-    /* @media screen and (max-width: 1099px) {
-      .club-cards-vertical {
-        display: none;
-      }
-    } */
-    
- /*    @media screen and (min-width: 1099px) {
-      .club-cards-horizontal {
-        display: none;
-      }
-  } */
+   
 
-.estudios .btn-conteriner{
+.estudios .container-estudio .btn-conteriner{
     width: 100%;
     margin-top: 11rem;
 }
@@ -566,14 +562,14 @@ a.btn-download:hover:before{
 .habilidades{
     background: var(--bg-color);
 }
-.habilidades h1{
+.habilidades .main-text h1{
     color: var(--hover-color);
     font-weight: 700;
     font-size: var(--normal-font);
     text-align: center;
 
 }
-.skill-main{
+.habilidades .skill-main{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -581,21 +577,21 @@ a.btn-download:hover:before{
     grid-column-gap: 50px;
 }
 
-.skill-bar{
+.habilidades .skill-main .skill-left .skill-bar{
     margin-bottom: 2.3rem;
 }
-.skill-main h3{
+.habilidades .skill-main .skill-left h3{
     margin-bottom: 2rem;
     font-size: var(--normal-font);
     text-align: center;
 }
-.skill-left .skill-bar .info{
+.habilidades .skill-main .skill-left .skill-bar .info{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
 } 
-.skill-left .skill-bar .bar{
+.habilidades .skill-main .skill-left .skill-bar .bar{
     width: 100%;
     height: 10px;
     background-color: var(--secon-bg-color);
@@ -603,7 +599,7 @@ a.btn-download:hover:before{
     margin-top: 10px;
     position: relative;
 }
-.skill-bar .bar span{
+.habilidades .skill-main .skill-left .skill-bar .bar span{
     width: 50%;
     height: 100%;
     position: absolute;
@@ -612,19 +608,19 @@ a.btn-download:hover:before{
     border-radius: 25px;
     box-shadow: var(--neon-box-shadow);
 } 
-.skill-bar .bar .html{
+.habilidades .skill-main .skill-left .skill-bar .bar .html{
     width: 72%;
     animation: html 2s;
 }
-.skill-bar .bar .css{
+.habilidades .skill-main .skill-left .skill-bar .bar .css{
     width: 30%;
     animation: css 3s;
 }
-.skill-bar .bar .figma{
+.habilidades .skill-main .skill-left .skill-bar .bar .figma{
     width: 10%;
     animation: figma 4s;
 }
-.skill-bar .bar .java{
+.habilidades .skill-main .skill-left .skill-bar .bar .java{
     width: 90%;
     animation: java 5s;
 }
@@ -663,22 +659,28 @@ a.btn-download:hover:before{
 }
 
 /* skill rigth */
-.profesional{
+.habilidades .skill-main .skill-rigth h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+
+}
+.habilidades .skill-main .skill-rigth .profesional{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.box{
+.habilidades .skill-main .skill-rigth .profesional .box{
     position: relative;
     margin: 10px 0;
     flex: 1 1 15rem;
     text-align: center;
 }
-.box .text{
+.habilidades .skill-main .skill-rigth .profesional .box .text{
     text-align: center;
     color: #fff;
     font-size: 1rem;
 }
-.box .text big{
+.habilidades .skill-main .skill-rigth .profesional .box .text big{
     font: 400;
     letter-spacing: 1px;
     position: absolute;
@@ -686,11 +688,11 @@ a.btn-download:hover:before{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.box .text small{
+.habilidades .skill-main .skill-rigth .profesional .box .text small{
     display: block;
     font-weight: 600;
 }
-.circle{
+.habilidades .skill-main .skill-rigth .profesional .box .circle{
     width: 100%;
     height: 120px;
     display: flex;
@@ -699,7 +701,7 @@ a.btn-download:hover:before{
 }
 
 .circle .points{
-    width: 2px;
+    width: 3px;
     height: 10px;
     background-color:var(--secon-bg-color);
     position: absolute;
