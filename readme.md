@@ -1,3 +1,8 @@
+manejo git
+git add .
+git commit -m "mensaje"
+git push origin main
+
 hasta el momento se agrego acomodo todo , al aplicar boorstar el linj y su jeison se desconfiguro la card de estudios, supongo cuando lo pase a angular se solucionaara.
 
 conectar btn con modal:
